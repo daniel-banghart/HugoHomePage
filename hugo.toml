@@ -1,4 +1,5 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://danielbanghart.com/'
 locale = 'en-us'
-title = 'My New Hugo Project'
-theme = 'ananke'
+title = 'Daniel Banghart - Software Engineer'
+#theme = 'ananke'
+sectionPagesMenu = 'main'
