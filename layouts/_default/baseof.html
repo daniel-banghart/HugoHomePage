@@ -3,8 +3,12 @@
 <head>
  <meta charset="utf-8">
  <title>{{ .Page.Title }}</title>
- {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+ {{ with resources.Get "sass/main.scss" }}
+   {{ $style := . | toCSS | resources.Minify }}
+   <link rel="stylesheet" href="{{ $style.Permalink }}">
+ {{ else }}
+   {{ errorf "Unable to find assets/sass/main.scss" }}
+ {{ end }}
 </head>
 
 <body>
