@@ -1,0 +1,27 @@
+# Hugo Build Output
+# Exclude the generated website files (usually built dynamically during deployment)
+/public/
+
+# Hugo Build Cache
+# Contains generated assets, processed images, and stylesheets
+/resources/_gen/
+/resources/
+
+# Build Locks
+.hugo_build.lock
+
+# Dependency Directories
+/node_modules/
+
+# Local Dev Tooling & Frontend Configs
+/assets/jsconfig.json
+hugo_stats.json
+
+# Local OS Files
+.DS_Store
+Thumbs.db
+
+# Executables (if downloaded directly into the repository)
+hugo.exe
+hugo.darwin
+hugo.linux
